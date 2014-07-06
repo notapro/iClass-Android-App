@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- DISPLAY MESSAGES LIKE 'YOU ARE IN THE WAITING QUEUE/ ACTIVE QUEUE / ITS YOUR TURN -->
+
+    <ImageView
+        android:id="@+id/minimizeButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/etextgray" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3"
+        android:text="Hello User"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <!-- DISPLAY MESSAGES LIKE CURRENT QUEUE POSITION / WAIT FOR YOUR TURN / START SPEAKING -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/queue_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Waiting for Position..."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/start_speaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:src="@drawable/start_speaking"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <!-- BUTTON TO WITHDRAW REQUEST -->
+
+    <ImageView
+        android:id="@+id/cancel_request"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="4"
+        android:src="@drawable/disconnect" />
+
+</LinearLayout>

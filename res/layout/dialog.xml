@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dgpasstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textStyle="italic"
+        android:textColor="#6E6E6E"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/dgpassedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+          </EditText>
+
+         <TextView
+             android:id="@+id/dobtext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:text="DOB"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#6E6E6E"
+             android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/dob"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        style="@android:style/Widget.Holo.Spinner" 
+        
+        
+        />
+
+    <TextView
+        android:id="@+id/forgetpassdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Forgot Password?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#0000FF" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+    <Button
+        android:id="@+id/canceldg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="Cancel" />
+    <Button
+        android:id="@+id/dgbut"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:text="OK" />
+
+    
+
+    </LinearLayout>
+    
+</LinearLayout>

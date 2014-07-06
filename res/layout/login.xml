@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+            
+             >
+        
+     <TextView
+         android:id="@+id/regtextk"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:shadowColor="#000000"
+         android:shadowDx="0.5"
+         android:shadowDy="0.5"
+         android:shadowRadius="6.0"
+         android:text="  Create New Account  "
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#FFFFFF"
+         android:textSize="30sp"
+         android:textStyle="bold" />
+     
+      <View
+          android:layout_width="fill_parent"
+          android:layout_height="2dp"
+          android:layout_marginBottom="20dp"
+          android:layout_marginTop="15dp"
+          android:background="#c0c0c0" />
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="25dp"
+    android:orientation="horizontal" >
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/chooseimg" />
+
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Email"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Name"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/rollnok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:contentDescription="Email"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Roll No"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/doblogin"
+            style="@android:style/Widget.Holo.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Date of Birth"
+             />
+
+        <EditText
+            android:id="@+id/passk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Email"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Create Password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+   
+     
+    
+    
+    </LinearLayout>
+  
+<!-- 
+
+<CheckBox
+    android:id="@+id/acceptk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp"
+    android:text="I Accept All Rules of ClassRoom" />
+
+ -->
+
+    <Button
+        android:id="@+id/regbuttonk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:text="Register" />
+   
+ </LinearLayout>
+   </ScrollView>
+</LinearLayout>
+
